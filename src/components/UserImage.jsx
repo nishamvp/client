@@ -1,6 +1,6 @@
 import { Box } from '@mui/material'
 
- const UserImage = ({ image, size = '60px' }) => {
+const UserImage = ({ image, size = '60px' }) => {
   return (
     <Box height={size} width={size}>
       <img
@@ -8,7 +8,7 @@ import { Box } from '@mui/material'
         height={size}
         width={size}
         alt="user"
-        style={{ objectFit:'cover', borderRadius: '50%' }}
+        style={{ objectFit: 'cover', borderRadius: '50%' }}
       />
     </Box>
   )

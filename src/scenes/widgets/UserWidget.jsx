@@ -26,6 +26,7 @@ const UserWidget = ({ userId, picturePath }) => {
   const medium = palette.neutral.medium
   const main = palette.neutral.main
 
+
   const getUser = async () => {
     const response = await fetch(`http://localhost:3001/user/${userId}/`, {
       method: 'GET',
@@ -74,7 +75,7 @@ const UserWidget = ({ userId, picturePath }) => {
             >
               {firstName} {lastName}
             </Typography>
-            <Typography color={medium}>{friends} friends</Typography>
+            <Typography color={medium}>{friends.length} friends</Typography>
           </Box>
         </FlexBetween>
         <ManageAccountsOutlined />
